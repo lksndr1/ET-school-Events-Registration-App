@@ -1,0 +1,43 @@
+h1 {
+    margin-left: 70px;
+}
+
+#events-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 50px;
+    padding: 20px;
+    margin: 30px;
+}
+
+#events-list .event {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+#pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#pagination ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#pagination li {
+    display: inline;
+    margin: 0 5px;
+}
+
+#pagination a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+#pagination a:hover {
+    text-decoration: underline;
+}
+

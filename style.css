@@ -1,3 +1,7 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
     margin-left: 70px;
 }
@@ -8,7 +12,21 @@ h1 {
     grid-template-rows: repeat(3, auto);
     gap: 50px;
     padding: 20px;
-    margin: 30px;
+    margin: 10px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.event-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-details a {
+    text-decoration: none;
+    color: #4e84be;
 }
 
 #events-list .event {
@@ -17,8 +35,10 @@ h1 {
 }
 
 #pagination {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
     text-align: center;
-    margin-top: 20px;
 }
 
 #pagination ul {

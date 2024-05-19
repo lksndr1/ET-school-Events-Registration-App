@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ev-reg-page-style.css">
+    <title>Event registration page</title>
+</head>
+<body>
+    
+    <main>
+        <div id="container">
+            <h1>Event registration</h1>
+            <form action="eventregistration.php" method="post">
+                <label for="full_name">Full Name:</label><br>
+                <input type="text" id="full_name" name="full_name" required><br><br>
+        
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="dob">Date of birth:</label><br>
+                <input type="date" id="dob" name="dob" required><br><br><br>
+                
+                <label>Where did you hear about this event?</label><br>
+                <div id="container-question">
+                    <div>
+                        <input type="radio" id="social_media" name="where_heard" value="Social Media" required>
+                        <label for="social_media">Social media</label><br>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" id="friends" name="where_heard" value="Friends" required>
+                    <label for="friends">Friends</label><br>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" id="found_myself" name="where_heard" value="Found Myself" required>
+                        <label for="found_myself">Found myself</label><br><br>
+                    </div>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
